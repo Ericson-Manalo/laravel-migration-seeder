@@ -8,4 +8,8 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     //
+
+    function public home(){
+        return view('guest.home');
+    }
 }
