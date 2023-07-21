@@ -10,6 +10,6 @@ class TrainController extends Controller
     //
 
     public function index(){
-        return view('guest.trains.index');
+        return view('guest.trains.index', compact('trainList'));
     }
 }
