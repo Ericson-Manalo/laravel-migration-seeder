@@ -9,7 +9,7 @@ class TrainController extends Controller
 {
     //
 
-    function public index(){
+    public function index(){
         return view('guest.trains.index');
     }
 }

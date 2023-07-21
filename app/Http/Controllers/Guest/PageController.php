@@ -9,7 +9,7 @@ class PageController extends Controller
 {
     //
 
-    function public home(){
+    public function home(){
         return view('guest.home');
     }
 }
