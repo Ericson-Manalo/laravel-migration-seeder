@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Faker\Generator as Faker;
 use App\Models\Train;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -15,30 +16,30 @@ class TrainSeeder extends Seeder
      */
     public function run()
     {
-        $trainList = [
-            [
-                'agency' => 'Frecciarossa',
-                'departure_station' => 'Frecciarossa',
-                'arrival_station' => 'Frecciarossa',
-                'departure_time' => '13:30:00',
-                'arrival_time' => '15:30:00',
-                'train_code' => '4GS47',
-                'carriages_num' => 12,
-                'in_time' => true,
-                'canceled' => false,
-            ],
-            [
-                'agency' => 'Italo',
-                'departure_station' => 'Italo',
-                'arrival_station' => 'Italo',
-                'departure_time' => '15:30:00',
-                'arrival_time' => '15:30:00',
-                'train_code' => '6GXH0',
-                'carriages_num' => 8,
-                'in_time' => false,
-                'canceled' => true,
-            ]
-        ];
+        // $trainList = [
+        //     [
+        //         'agency' => 'Frecciarossa',
+        //         'departure_station' => 'Frecciarossa',
+        //         'arrival_station' => 'Frecciarossa',
+        //         'departure_time' => '13:30:00',
+        //         'arrival_time' => '15:30:00',
+        //         'train_code' => '4GS47',
+        //         'carriages_num' => 12,
+        //         'in_time' => true,
+        //         'canceled' => false,
+        //     ],
+        //     [
+        //         'agency' => 'Italo',
+        //         'departure_station' => 'Italo',
+        //         'arrival_station' => 'Italo',
+        //         'departure_time' => '15:30:00',
+        //         'arrival_time' => '15:30:00',
+        //         'train_code' => '6GXH0',
+        //         'carriages_num' => 8,
+        //         'in_time' => false,
+        //         'canceled' => true,
+        //     ]
+        // ];
 
         foreach ($trainList as $train){
             $newTrain = new Train();
