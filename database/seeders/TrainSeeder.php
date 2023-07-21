@@ -111,7 +111,7 @@ class TrainSeeder extends Seeder
                 $newTrain->arrival_station = $faker->randomElement($stationList);
                 $newTrain->departure_time = $faker->time('H:i:s');
                 $newTrain->arrival_time = $faker->time('H:i:s');
-                $newTrain->train_code = $faker->bothify('CAXG-1742!');
+                $newTrain->train_code = $faker->bothify('?????-#####');
                 $newTrain->carriages_num = $faker->randomDigit();
                 $newTrain->in_time = $faker->randomElement($boolTrain);
                 $newTrain->canceled = $faker->randomElement($boolTrain);
